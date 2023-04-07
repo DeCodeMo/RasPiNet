@@ -13,8 +13,7 @@ body:
         Do NOT provide provide network specific info such as IP's or Wifi passwords!!
     validations:
       required: true
-    
-      required: true
+      
   - type: textarea
     id: reproduce
     attributes:
