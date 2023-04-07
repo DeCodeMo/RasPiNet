@@ -1,0 +1,39 @@
+name: "🪲 RasPiNet Bug Report"
+description: Tell us about the bug so we can improve RasPiNet!
+labels: ['bug', 'needs-triage']
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: |
+        Please provide a clear and concise description of what the bug is.
+        Specify whether it is a hardware or software issue.
+        If applicable, include screenshots or log output to help explain your problem.
+        Do NOT provide provide network specific info such as IP's or Wifi passwords!!
+    validations:
+      required: true
+    
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can someone else reproduce it?
+      description: |
+        Please describe how to reproduce the issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: What is your environment?
+      description: |
+        For example, what Raspberry Pi version are you using? What OS?
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Anything else we need to know?
