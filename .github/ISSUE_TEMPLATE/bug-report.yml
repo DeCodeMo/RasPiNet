@@ -1,6 +1,6 @@
 name: "🪲 RasPiNet Bug Report"
 description: Tell us about the bug so we can improve RasPiNet!
-labels: ['bug', 'needs-triage']
+labels: ['bug-fix', 'triage']
 body:
   - type: textarea
     id: problem
