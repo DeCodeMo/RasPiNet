@@ -1,0 +1,17 @@
+name: ":superhero: RasPiNet Feature Request"
+description: Suggest a new feature or enhancment for RasPiNet!
+labels: ['feature-request', 'triage']
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like to be added?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true
