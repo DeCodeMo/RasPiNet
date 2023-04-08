@@ -1,1 +1,20 @@
 
+# starter workflow
+name: ci
+on:
+    workflow_dispatch:
+    push:
+      branches:
+        - main
+    pull_request:
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v1
+          - name: Run ShellCheck
+            uses: azohra/shell-linter@latest
+          - name: Run clear-config (critical)
+            run: |
+                ./tools/clear-conf.sh
