@@ -1,18 +1,18 @@
 # Contributing
 
-######Thank you for your interest in contributing to RasPiNet!
+###### Thank you for your interest in contributing to RasPiNet!
 
-##### Contributions to RasPiNet are welcome!
+##### Contributions to RasPiNet are welcome.
 *`!` Before doing so, please read this guide.*
 
-*`!` All contributions come under the respective licences detailed in the repository. See the `LICENSE` file for more details.*
+*`!` All contributions come under the respective licenses detailed in the repository. See the `LICENSE` file for more details.*
 
 *`!` Ensure that the `Code of Conduct` is reviewed prior to making contributions.* 
 
 ## Issues
 
 * To report an issue use the `Issues` tab on the main RasPiNet repository. 
-  * Issues currently have the follwing templates. 
+  * Issues currently have the following templates. 
 
 1) **Bug Reports**
 2) **Feature Requests**
@@ -62,16 +62,16 @@ Basic guidelines:
 The following details a rough workflow from reporting a bug/issue, to writing code, and getting your changes merged using a Pull Request.
  1) **Submit the issue ticket**
     * After an issue is submitted, it will be triaged and routed accordingly. 
-    * Note that if the contributing guide or process was not followed, it may be removed or you will be asked to fix it. Mistakes happen but follow the instructions so developers can promply add the feature or fix the bug. 
+    * Note that if the contributing guide or process was not followed, it may be removed or you will be asked to fix it. Mistakes happen but follow the instructions so developers can promptly add the feature or fix the bug. 
  2) **Make a plan**
      * Use markdown checklists to lay it out prior to coding
  3) **Create a new branch**
-     * Follow the eguidlines of `ghuser\issue-num_issue-name
+     * Follow the guidelines of `ghuser\issue-num_issue-name
      * Link the branch to the issue
  4) **Write the code**
      * If you are an outside contributor, create a fork of the repository and make your changes on a
        branch in that fork.
-     * If you are a kRPC dev team member with write access to the repository, create a branch in the
+     * If you are a RasPiNet dev team member with write access to the repository, create a branch in the
        repository directly (without forking). See below for details on best practices for
        branches. You should also "assign" the issue to yourself, to indicate that you are actively
        working on the issue.
@@ -117,5 +117,4 @@ The following details a rough workflow from reporting a bug/issue, to writing co
 * Remove unnecessary comments or code before submitting a pull request.
 * Use consistent naming conventions for files, directories, and code elements.
 * Write clear commit messages that summarize the changes made and explain why they were made.
-
 
