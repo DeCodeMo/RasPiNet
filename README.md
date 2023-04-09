@@ -14,6 +14,7 @@ A network tool built for Raspberry Pi.
 - [ ] RPi server. 
 - [ ] Live host discovery.
 - [ ] Host cross compatability (Windows, Ubuntu)
+- [ ] Generate documentation template
 
 
 ## Links 
