@@ -43,7 +43,7 @@ CONFDIR="${PROJDIR}"/config
 
 # clear all config files
 clear-host-network-conf(){
-cat << EOF > "${CONFDIR}"/host-network.conf
+cat << EOF 
 # This file is auto-generated
 # Author: GDCosmo
 # Date: none
@@ -79,7 +79,8 @@ EOF
 banner-msg "Clearing config files..."
 
 status-msg "Clearing host-network.conf..."
-clear-host-network-conf
+
+clear-host-network-conf > "${CONFDIR}"/host-network.conf
 
 banner-msg "All config files cleared"
 
@@ -90,9 +91,9 @@ HOSTCONF_FILE="host-network.conf"
 HOSTCONF_STATE=$(cat "${CONFDIR}"/"${HOSTCONF_FILE}" | grep "Date:" | awk '{print $3}')
 
 if [ "${HOSTCONF_STATE}" == "none" ]; then
-    banner-msg "Config file "${HOSTCONF_FILE}" is cleared"
+    banner-msg "Config file ${HOSTCONF_FILE} is cleared"
 else
-    error-msg "Config file "${HOSTCONF_FILE}" is not cleared"
+    error-msg "Config file ${HOSTCONF_FILE} is not cleared"
     exit 1
 fi
 
