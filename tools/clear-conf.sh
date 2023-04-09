@@ -88,7 +88,7 @@ banner-msg "All config files cleared"
 # use an array to store the config files
 
 HOSTCONF_FILE="host-network.conf"
-HOSTCONF_STATE=$(cat "${CONFDIR}"/"${HOSTCONF_FILE}" | grep "Date:" | awk '{print $3}')
+HOSTCONF_STATE=$(grep -o -w 'none' "${CONFDIR}"/"${HOSTCONF_FILE}" | head -n 1)
 
 if [ "${HOSTCONF_STATE}" == "none" ]; then
     banner-msg "Config file ${HOSTCONF_FILE} is cleared"
