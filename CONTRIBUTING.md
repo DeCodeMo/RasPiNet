@@ -66,7 +66,7 @@ The following details a rough workflow from reporting a bug/issue, to writing co
  2) **Make a plan**
      * Use markdown checklists to lay it out prior to coding
  3) **Create a new branch**
-     * Follow the guidelines of `ghuser\issue-num_issue-name
+     * Follow the guidelines of `ghuser\issue-num_issue-name`
      * Link the branch to the issue
  4) **Write the code**
      * If you are an outside contributor, create a fork of the repository and make your changes on a
@@ -117,4 +117,5 @@ The following details a rough workflow from reporting a bug/issue, to writing co
 * Remove unnecessary comments or code before submitting a pull request.
 * Use consistent naming conventions for files, directories, and code elements.
 * Write clear commit messages that summarize the changes made and explain why they were made.
+
 
