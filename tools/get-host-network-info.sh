@@ -224,9 +224,9 @@ EOF
 
 status-msg "Generating config file..."
 
-mkdir -p $PROJDIR/config
+mkdir -p "$PROJDIR"/config
 
-get-config-file > $PROJDIR/config/host-network.conf
+get-config-file > "$PROJDIR"/config/host-network.conf
 
 banner-msg "Network manager config file generated"
 

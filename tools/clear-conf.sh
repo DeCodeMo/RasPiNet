@@ -39,11 +39,11 @@ else
     exit 1
 fi
 
-CONFDIR="${PROJDIR}/config"
+CONFDIR="${PROJDIR}"/config
 
 # clear all config files
 clear-host-network-conf(){
-cat << EOF > ${CONFDIR}/host-network.conf
+cat << EOF > "${CONFDIR}"/host-network.conf
 # This file is auto-generated
 # Author: GDCosmo
 # Date: none
@@ -87,12 +87,12 @@ banner-msg "All config files cleared"
 # use an array to store the config files
 
 HOSTCONF_FILE="host-network.conf"
-HOSTCONF_STATE=$(cat ${CONFDIR}/${HOSTCONF_FILE} | grep "Date:" | awk '{print $3}')
+HOSTCONF_STATE=$(cat "${CONFDIR}"/"${HOSTCONF_FILE}" | grep "Date:" | awk '{print $3}')
 
-if [ ${HOSTCONF_STATE} == "non" ]; then
-    banner-msg "Config file ${HOSTCONF_FILE} is cleared"
+if [ "${HOSTCONF_STATE}" == "none" ]; then
+    banner-msg "Config file "${HOSTCONF_FILE}" is cleared"
 else
-    error-msg "Config file ${HOSTCONF_FILE} is not cleared"
+    error-msg "Config file "${HOSTCONF_FILE}" is not cleared"
     exit 1
 fi
 
