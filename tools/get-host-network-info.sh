@@ -196,6 +196,7 @@ cat << EOF
 # Author: GDCosmo
 # Date: $(date)
 
+# default
 [Host]
 host-iface $DEF_IFACE
 host-ip $DEF_IP
@@ -206,7 +207,7 @@ host-cidr $DEF_NETWORK_RANGE
 
 [Wifi]
 wifi-state $WIFI_IS_UP
-iface $WIFI_IFACE
+wifi-iface $WIFI_IFACE
 wifi-ip $WIFI_IP
 wifi-gateway $WIFI_GATEWAY
 wifi-netmask $WIFI_NETMASK

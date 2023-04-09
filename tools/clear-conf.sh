@@ -59,7 +59,7 @@ host-cidr none
 
 [Wifi]
 wifi-state none
-iface none
+wifi-iface none
 wifi-ip none
 wifi-gateway none
 wifi-netmask none
