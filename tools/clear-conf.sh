@@ -39,7 +39,7 @@ else
     exit 1
 fi
 
-CONFDIR="${PROJDIR}/config/"
+CONFDIR="${PROJDIR}/config"
 
 # clear all config files
 clear-host-network-conf(){
@@ -85,15 +85,15 @@ banner-msg "All config files cleared"
 
 # check the config file and make sure it is empty
 # use an array to store the config files
-conf-files=("host-network.conf")
 
-for file in "${conf-files[@]}"; do
-    if [ -s "${CONFDIR}/${file}" ]; then
-        error-msg "Config file ${file} is not empty"
-        exit 1
-    else
-        banner-msg "Config file ${file} is cleared"
-    fi
-done
+HOSTCONF_FILE="host-network.conf"
+HOSTCONF_STATE=$(cat ${CONFDIR}/${HOSTCONF_FILE} | grep "Date:" | awk '{print $3}')
+
+if [ ${HOSTCONF_STATE} == "non" ]; then
+    banner-msg "Config file ${HOSTCONF_FILE} is cleared"
+else
+    error-msg "Config file ${HOSTCONF_FILE} is not cleared"
+    exit 1
+fi
 
 exit 0
