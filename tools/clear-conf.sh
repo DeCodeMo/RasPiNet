@@ -78,16 +78,16 @@ EOF
 # clear all config files
 banner-msg "Clearing config files..."
 
-status-msg "Clearing host-network.conf..."
+status-msg "Clearing hostnet.conf..."
 
-clear-host-network-conf > "${CONFDIR}"/host-network.conf
+clear-host-network-conf > "${CONFDIR}"/hostnet.conf
 
 banner-msg "All config files cleared"
 
 # check the config file and make sure it is empty
 # use an array to store the config files
 
-HOSTCONF_FILE="host-network.conf"
+HOSTCONF_FILE="hostnet.conf"
 HOSTCONF_STATE=$(grep -o -w 'none' "${CONFDIR}"/"${HOSTCONF_FILE}" | head -n 1)
 
 if [ "${HOSTCONF_STATE}" == "none" ]; then

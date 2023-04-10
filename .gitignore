@@ -10,7 +10,9 @@
 *.userosscache
 *.sln.docstates
 /devtools
-network.conf
+# remove all configs and leave INFO.txt
+config/*
+!config/CONFIG-INFO.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -350,3 +352,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+config/hostnet.conf
