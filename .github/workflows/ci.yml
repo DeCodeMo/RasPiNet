@@ -17,6 +17,6 @@ jobs:
             uses: azohra/shell-linter@latest
             with:
               exclude-paths: "LICENSE, VERSION"
-          - name: Run clear-config (critical)
+          - name: Run clear-hostnet-conf.sh (critical)
             run: |
                 ./tools/clear-conf.sh
