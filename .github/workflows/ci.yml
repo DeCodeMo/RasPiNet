@@ -19,4 +19,4 @@ jobs:
               exclude-paths: "LICENSE, VERSION"
           - name: Run clear-hostnet-conf.sh (critical)
             run: |
-                ./tools/clear-conf.sh
+                ./tools/clear-hostnet-conf.sh
