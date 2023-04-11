@@ -6,7 +6,7 @@ A network tool built for Raspberry Pi.
 
 ## Release Notes
 
-### [1.0.0] RasPiNet Beta Release
+### [v0.1.0a] RasPiNet Developmental Pre-Release
 
 - [X] Basic workflows, linting, and dependency management.
 - [X] Connection logic.
